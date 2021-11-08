@@ -1,0 +1,273 @@
+@font-face{
+    src: url('../Fonts/IronFist-KqrD.ttf');
+    font-family: iron-fist;
+}
+
+
+.MyContainer{
+    margin-top: 30px;
+    margin-bottom: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.MyRow{
+    padding: 10px 0px;
+    overflow: hidden;
+}
+/*------------------------------------- Styling for header ------------------------------------------------------------*/
+.Heading_Row{
+    margin: 0;
+    width: 100%;
+}
+
+.events_heading{
+    margin-bottom: 15px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-right: 20px;
+}
+
+.events_heading .heading_main{
+    margin-left: 10%;
+    width: 90%;
+}
+
+.events_heading .heading_main h4{
+    text-align: center;
+    color: #00ff00;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/*------------------------------------- Styling for header ------------------------------------------------------------*/
+
+/*--------------------------------------------- styling for year button container and year buttons ----------------------------------------*/
+.Years{
+    padding: 40px 0px 40px 15px;
+}
+
+.YearButton{
+    margin-bottom: 15px;
+    padding: 2px 5px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    background: inherit;
+    outline: none;
+    color: #1a73e8;
+    border: none;
+    font-family: Robot Slab;
+}
+
+.YearButton:hover{
+    background: #F5F4F4;
+    border-radius: 5px;
+    background: white;
+}
+
+.YearButton:active{
+    outline: none;
+}
+
+.YearButton.active{
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #1a73e8;
+}
+
+/*--------------------------------------------- styling for year button container and year buttons ----------------------------------------*/
+
+
+/* ------------------------------------------------ stylying for card container -----------------------------------------------------*/
+
+.EventsCardContainer{
+    padding: 0;
+    margin: 0;
+}
+
+.EventButtons{
+    padding: 5px 0px;
+    margin: 0px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.EventButton{
+    display: inline-block;
+    width: auto;
+    margin: 0px 10px;
+    padding: 9px;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    border: none;
+    font-weight: 300;
+    text-transform: capitalize;
+    background: inherit;
+}
+
+.EventButton:hover{
+    color: black;
+    background: white;
+    border-radius: 10px;
+}
+
+.EventButton:active{
+    outline: none;
+}
+
+.EventButton.active{
+    color: black;
+    outline: none;
+    border-bottom: 3px solid #df00fe;
+}
+.EventButton.active:hover{
+    border-radius: 0px;
+}
+
+.EventButton:nth-of-type(2).active{
+    border-bottom: 3px solid #ff6700;
+}
+
+
+.EventsCardContainer .CardsContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.EventsCardContainer .CardsContainer .maineventcontainer{
+    margin: 0px 0px 100px;
+    padding: 0px 20px;
+    height: 300px;
+    width: 370px;
+}
+
+.EventsCardContainer .CardsContainer .maineventcontainer>p{
+    font-family: Fira Sans;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.EventsCardContainer .CardsContainer .maineventcontainer .PratsCards{
+    height: 100%;
+}
+
+.modaltogglebtn{
+    background: inherit;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.modaltogglebtn:active{
+    color: black;
+}
+
+.modaltogglebtn:focus{
+    outline: none;
+}
+
+.MyModalHeader h5{
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.MyModalBody img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.MyModalBody p{
+    font-size: 14px !important;
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    font-family: Fira Sans;
+}
+
+/*----- For Small Screens   -----*/
+@media only screen and (max-width: 500px) {
+    .EventsCardContainer .CardsContainer .maineventcontainer{
+        padding: 0;
+        width: 330px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    .MyContainer{
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    
+    .events_heading .heading_main{
+        margin-left: 8%;
+    }
+    .Years{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        overflow-x: scroll;
+        padding: 5px;
+    }
+    
+    .Years::-webkit-scrollbar {
+        display: none;
+    }
+
+    .YearButton {
+        float: left;
+        width: auto;
+        margin: 0;
+        margin-right: 5px;
+        padding: 2px 10px;
+    }
+    
+    .YearButton:hover {
+        background: #F5F4F4;
+        border-radius: 5px;  
+    }
+    
+    .YearButton.active {
+        outline: none;
+        background: #F5F4F4;
+    }
+    
+    .EventButton:hover{
+        color: black;
+        font-size: 18px;
+    }
+}
+
+/*----- For medium screens -----*/
+@media only screen and (min-width: 1439px){
+    .YearButton{
+        padding: 5px 25px;
+        font-size: 22px;
+    }
+}
+
+/* special style for 2020 */
+
+.special2020 .CardsContainer .PratsCards h2{
+    font-weight: 500;
+}

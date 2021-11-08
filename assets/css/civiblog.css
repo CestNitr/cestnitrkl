@@ -1,0 +1,207 @@
+@font-face{
+    src: url('../Fonts/IronFist-KqrD.ttf');
+    font-family: iron-fist;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&family=Roboto+Slab:wght@400;500;600&display=swap');
+
+
+.section-4{
+    width: 90%;
+    /* padding: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 180px;
+  }
+
+  .section-4 h1{
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 5rem auto;
+  }
+  
+  .section-4 .my_container{
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .section-4 .my_container .card{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    margin: 2rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.4);
+    transition: 0.5s;
+  }
+  
+  .section-4 .my_container .card .image{
+    position: relative;
+    width: 100%;
+    height: 60%;
+  }
+  
+  .section-4 .my_container .card .image img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-4 .my_container .button{
+    cursor: pointer;
+  }
+  
+  .section-4 .my_container .card .content{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 350px;
+    height: 40%;
+    transition:0.9s ease-in-out;
+    background:white;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  .section-4 .my_container .card .content h2{
+    background:black;
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-4 .my_container .card .content p{
+    padding: 0 20px;
+    text-align: justify;
+    margin-top:12px;
+    font-size: 0.9rem;
+    line-height: 18px;
+    font-family: fira sans;
+    font-weight: 500;
+  }
+  
+  .section-4 .my_container .card .addinfo{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 20px;
+    width: 100%;
+    top:0;
+    left:0;
+    background:rgb(0, 0, 0, 0.7);
+    transform: translateY(-100%);
+    transition:0.5s;    
+  }
+.section-4 .my_container .card .addinfo h4{
+    font-size: 16px;
+    color:white;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+  
+  .section-4 .my_container .card:hover .addinfo{
+    transform: translateY(0%);
+  }
+  
+  .section-4 .my_container .card .bottom{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background: white;
+    bottom: 0;
+  }
+  
+  .section-4 .my_container .card .bottom .date{
+    position: absolute;
+    bottom:0px;
+    display: inline-block;
+    right:30px;
+    /* background:#f1c40f; */
+    background: linear-gradient(to top right, #f7971e, #ffd200);
+    padding: 0px 10px;
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  .section-4 .my_container .card .bottom .button{
+    position:absolute;
+    display:inline-block;
+    bottom:20px;
+    left: 20px;
+  }
+  
+  .section-4 .my_container .card .bottom .button a{
+    padding: 7px 30px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-top-left-radius: 0px ;
+  }
+  
+  .section-4 .my_container .card .bottom .button a{
+    background: linear-gradient(to top right, #232526, #414345);
+    box-shadow: 0rem 0rem 1rem rgba(0,0,0,0.3);
+  }
+
+  .section-4 .my_container .card .bottom .button a:hover{
+    background: black;
+  }
+  
+  @media screen and (max-width: 1025px) {
+
+    .section-4 .my_container:hover .card{
+      transform: scale(1);
+    }
+    
+    .section-4 .my_container .card:hover{
+      transform: scale(1);
+    } 
+  
+  }
+  
+  @media screen and (max-width: 450px) {
+  
+    .section-4 .my_container{
+      width: 100%;
+    }
+  
+    .section-4 .my_container .card{
+      margin: 2rem 0;
+    }
+  
+    .section-4 .my_container .card .content p{
+      padding-right: 24px;
+    }
+    
+    .section-4 .my_container .card .content h2{
+        font-size: 0.9rem;
+        padding-right: 25px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .section-4 .my_container .card .content p{
+      padding-right: 32px;
+    }
+    
+  }

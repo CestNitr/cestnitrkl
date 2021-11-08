@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@400;500&display=swap');
+
+@font-face{
+    src: url('../Fonts/IronFist-KqrD.ttf');
+    font-family: iron-fist;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&family=Roboto+Slab:wght@400;500;600&display=swap');
+
+.about_us_container{
+    width: 75%;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_heading{
+    text-align: center;
+    margin: 30px;
+}
+
+.about_heading h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: goldenrod;
+}
+
+.about_heading h4{
+    font-family: Cuprum;
+    font-size: 40px;
+}
+
+.about_contents{
+    padding: 20px;
+    background: #ddd;
+    font-family: iron-fist;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4), 0px 0px 0px 1px rgba(0,0,0);
+}
+
+.about_contents h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.about_contents:nth-of-type(1) h3{
+    font-size: 30px;
+}
+
+.about_contents p{
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    font-family: Fira Sans;
+    font-weight: 400;
+}
+
+.about_contents .our_motto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+}
+
+.about_contents .our_motto img{
+    width: 15%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.about_contents p img{
+    width: 20%;
+    display: inline-block;
+    float: left;
+    height: auto;
+    margin: auto;
+    margin-right: 10px;
+}
+
+/* ------------------------- Image blocks of Facads ----------------------*/
+
+.facads .tile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.facads .tile .facads_message{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.facads .tile .facads_details{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; 
+    height: 435px;
+    background: white;
+}
+
+.facads .tile .facads_details .facads_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+.facads .tile .facads_details .facads_content h5{
+    font-size: 28px;
+    font-family: Yanone Kaffeesatz;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.facads .tile .facads_details .facads_content h6{
+    font-size: 15px;
+    margin: 0;
+    line-height: 22px;
+    text-align: center;
+    font-family: Roboto Slab;
+}
+
+.facads .tile .facads_details .facads_content .facads_links{
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 15px 0px 0px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #333;
+}
+
+.facads .tile .facads_details .facads_content .facads_links a{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto Slab;
+    font-size: 13px;
+}
+
+.facads .tile .facads_details .facads_image{
+    width: 250px;
+    position: relative;
+    top: -20px;
+}
+
+.facads .tile .facads_details .facads_image img{
+    margin-bottom: 15px;
+    width: 100%;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+}
+
+.facads .tile .facads_message h4 {
+    text-align: center;
+    font-family: Roboto Slab;
+    font-weight: 500;
+}
+
+/* ------------------------- Image blocks of Facads ----------------------*/
+
+/* ------------------------- Image blocks of founder ---------------------*/
+
+.founder .tile{
+    margin: 20px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.founder .tile:last-of-type{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.founder .tile .founder_message{
+    width: 70%;
+    margin: 0;
+    padding: 0px;
+}
+
+.founder .tile .founder_message p{
+    padding: 0px;
+}
+
+.founder .tile .founder_details{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px; 
+    height: 400px;
+    background: white;
+    margin-right: 20px;
+}
+
+.founder .tile .founder_details .founder_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+
+.founder .tile .founder_details .founder_content h5{
+    font-size: 28px;
+    font-family: Yanone Kaffeesatz;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.founder .tile .founder_details .founder_content .founder_links{
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 15px 0px 0px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #333;
+}
+
+.founder .tile .founder_details .founder_content .founder_links a{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto Slab;
+    font-size: 13px;
+}
+
+.founder .tile .founder_details .founder_image{
+    width: 280px;
+    position: relative;
+    top: -20px;
+}
+
+.founder .tile .founder_details .founder_image img{
+    margin-bottom: 15px;
+    width: 100%;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3);
+}
+
+.founder .tile .founder_message h4 {
+    text-align: center;
+    font-family: Roboto Slab;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+
+/* ------------------------- Image blocks of founder ---------------------*/
+
+@media screen and (max-width: 1024px){
+    
+    .about_us_container{
+        width: 90%;
+    }
+    
+    .about_contents .our_motto img{
+        width: 25%;    
+    }
+    
+    .about_contents{
+        padding: 20px;
+    }
+    
+    .about_contents p{
+        padding: 0px;
+    }
+    
+    .about_contents p img{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .about_contents .our_motto{
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .about_contents .our_motto img{
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .about_contents p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .about_contents p img{
+        float: none;
+        display: block;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .founder .tile .founder_details{
+        margin-bottom: 60px;
+        margin-right: 0px;
+    }
+    
+    .facads .tile .facads_message{
+        width: 100%;
+    }
+    
+    .founder .tile .founder_message {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px){
+    
+    .facads .tile .facads_details{
+        height: 400px;
+    }
+    
+    .facads .tile .facads_details .facads_image{
+        width: 210px;
+    }
+    
+    .founder .tile .founder_details{
+        height: 360px;
+    }
+    
+    .founder .tile .founder_details .founder_image{
+        width: 210px;
+    }
+}

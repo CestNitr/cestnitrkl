@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  z-index: 99999;
+  margin: 0;
+  top: 0;
+}
+
+.loader .loading {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader .circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: black;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle 0.5s alternate infinite ease;
+}
+
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0%;
+  }
+}
+.loader .circle:nth-child(2) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.loader .circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+.loader .shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: gray;
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow 0.5s alternate infinite ease;
+}
+
+@keyframes shadow {
+  0% {
+    transform: scaleX(1.5);
+  }
+  40% {
+    transform: scaleX(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scaleX(0.2);
+    opacity: 0.4;
+  }
+}
+.loader .shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: 0.2s;
+}
+.loader .shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: 0.3s;
+}
+.loader .loading span {
+  position: absolute;
+  top: 75px;
+  font-family: "Lato";
+  font-size: 20px;
+  letter-spacing: 12px;
+  color: black;
+  left: 15%;
+}
+
+.load-modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.load-modal span {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.load-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  height: auto;
+  margin: 10vh auto;
+  background-color: white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.load-content img {
+  width: 100%;
+  height: auto;
+}
+
+.load-content p {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 20px 5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.load-content a {
+  text-decoration: none;
+  color: white;
+  background-color: #444;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  transition: 0.3s linear;
+}
+
+.load-content a:hover {
+  color: black;
+  background: #bbb;
+}

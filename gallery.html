@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery - CEST</title>
+    
+    <!-- -------------------------------------------- BOOTSTRAP AND FONT-AWESOME --------------------------------- -->
+    <link href="assets/Bootstrap%20OLD/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/font-awessome/css/all.min.css" rel="stylesheet">
+    <!-- -------------------x------------------------ BOOTSTRAP AND FONT-AWESOME ---------------x----------------- -->
+    
+    <!-- -------------------------------------------- CSS FOR NAVBAR --------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="assets/css/mynavbar.css">
+    <!-- ---------------------x--------------------- CSS FOR NAVBAR ------------------------x--------------------- --> 
+    
+    <!-- -------------------------------------------- CSS FOR FOOTER --------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <!-- -------------------------------------------- CSS FOR FOOTER --------------------------------------------- --> 
+     
+    <link href="assets/css/gallery.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/load.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Roboto+Slab:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+                    
+</head>
+<body onload="LOAD()">
+
+    <div class="loader">
+        <div class="loading">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <span>Loading</span>
+        </div>
+      </div>
+  
+    <!-- --------------------------------------------- NAVBAR ------------------------------------------------------------- --> 
+   <button class="fas fa-arrow-up" onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+    <nav class="navbar smart-scroll navbar-expand-lg navbar-light bg-light mynavbar">
+        <div class="Navbar-Logo">
+            <a href="index.html"><img src="assets/Images/CEST%20White%20Logo.png"></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapseNAVBAR" aria-controls="CollapseNAVBAR" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars my_ham_icon text-black"></span>
+        </button>
+
+        <div class="collapse navbar-collapse"  id="CollapseNAVBAR">
+            <ul class="navbar-nav ml-auto Navbar-Links">
+                <li class="nav-item nav-item Navbar-buttons">
+                    <a  href="index.html">Home</a>
+                </li>
+                <li class="nav-item Navbar-buttons">
+                    <a  href="about.html">About Us</a>
+                </li>
+                <li class="nav-item Navbar-buttons">
+                    <a href="initiative.html">Initiatives</a>
+                </li>
+                <li class="nav-item Navbar-buttons">
+                    <a  href="Events.html">Events</a>
+                </li>
+                <li class="nav-item Navbar-buttons">
+                    <a  href="members.html">Members</a>
+                </li>
+                <li class="nav-item Navbar-buttons">
+                    <a  href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item Navbar-buttons">
+                    <a  href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>  
+    <!--------------------------------------------------------------------------------------------------------------------------- -->
+    
+    <div class="gallery__container">
+       
+       <div class="gallery_heading">
+           <h4>Gallery</h4>
+       </div>
+        
+        <div class="small_window">
+            <span class="dropdown_menu fas fa-angle-down"></span>
+        </div>
+        <div class="buttons_gallery">
+            <section class="gallery__buttons">
+                <button class="gallery_button active" sort="workshop" >Workshops</button>
+                <button class="gallery_button" sort="talk" >Talk Session</button>
+                <button class="gallery_button" sort="december" >December Project</button>
+                <button class="gallery_button" sort="iitb" >Tech Fest IIT Bombay</button>
+                <button class="gallery_button" sort="iitk" >Megalith IIT Kaharagpur</button>
+                <button class="gallery_button" sort="innovision" >Innovision</button>
+                <button class="gallery_button" sort="group">Group Photo</button>
+                <button class="gallery_button" sort="insti" >Institute</button>
+            </section>
+        </div>
+        <section class="gallery__images">      
+        </section>
+    </div>
+    
+    <div id="myModal" class="gallerymodal">
+        <span class="galleryclose fas fa-times" onclick="closeModal()"></span>
+        
+        <div class="modal-content">  
+        </div>    
+        
+        <a class="prev fas fa-angle-left" onclick="plusSlides(-1)"></a>
+        <a class="next fas fa-angle-right" onclick="plusSlides(1)"></a>
+    </div>
+    
+    <!-- --------------------------------------------- FOOTER ------------------------------------------------------------- -->
+    <footer class="continer-fluid My__Footer align-items-center">
+        <div class="Overlay__Container">            
+            <section class="Overlay__Section align-items-center">
+                <i class="fa fa-map-marked-alt"></i>
+                <h4>Address</h4>
+                <p>Club under Technical Society,<br>Student Activity Centre,<br> National Institute of Technology Rourkela<br>Odisha, India, 769008</p>
+            </section>
+            
+            <section class="Overlay__Section">
+                <i class="far fa-envelope"></i>
+                <h4>E-Mail</h4>
+                <p>nitrklcest@gmail.com</p>
+            </section>
+        </div>
+        
+        <div class=" My__Row row justify-content-around">
+            <section class="col-lg-3 col-md-5 Logo__Container justify-content-center">
+                    <img src="assets/Images/Logo/NIT%20Rourkela4.png">
+                    <img src="assets/images/CEST%20White%20Logo.png">
+                    <p>"Civil Engineering Students Technical Club" (CEST) is a technical club of NIT Rourkela. The club aims to provide a platform fo the students to think, reflect, and wonder about the phenomena involved in Civil Engineering</p>
+            </section>
+            
+            <section class="col-lg-auto col-md-auto Content__Container">
+                <h4 class="Content__Heading">Quick Links</h4>  
+                <a class="quick__links" target="_blank" href="https://nitrkl.ac.in/CE/"><i class="fas fa-angle-right"> </i>  Dept. Of Civil Eng. NITR</a>                  
+                <a class="quick__links" target="_blank" href="https://nitrkl.ac.in/SAC/Technical-Service/"><i class="fas fa-angle-right"> </i>  SAC</a> 
+                <a class="quick__links" target="_blank" href="https://nitrkl.ac.in/Home.aspx"><i class="fas fa-angle-right"> </i>  NIT Rourkela</a>                         
+                <a class="quick__links" target="_blank" href="https://www.aicte-india.org/"><i class="fas fa-angle-right"> </i>  AICTE</a>                          
+                <a class="quick__links" target="_blank" href="https://hrm.mhrd.gov.in/home"><i class="fas fa-angle-right"> </i>  MHRD</a>                          
+            </section>
+            
+            <section class="col-lg-4 Map__Icon__Container">
+    
+                <div class="map">
+                   <h5>Find us here</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.649381494313!2d84.8990476150269!3d22.253378085347926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201f72bbd561c3%3A0xab5c70e76a7b5a!2sNational%20Institute%20of%20Technology%2C%20Rourkela!5e0!3m2!1sen!2sin!4v1610608235068!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:1px solid black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>    
+                <div class="Icons">
+                    <a href="https://www.instagram.com/cest.nitr/?hl=en" target="_blank" class="hover-fx"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/cestnitr/" target="_blank" class="hover-fx"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://in.linkedin.com/company/cest-club" target="_blank" class="hover-fx"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UC38qE_5BrFT-W-yBqKAPa-A" target="_blank" class="hover-fx"><i class="fab fa-youtube"></i></a>
+                    <a href="https://t.me/cestnitr" target="_blank" class="hover-fx"><i class="fab fa-telegram-plane"></i></a>
+                </div> 
+                
+            </section>
+        </div>
+        
+        <div class="ocean">    
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy 2021 CEST, Technical Society SAC, NITR, All Rights Reserved</p>
+        </div>
+        
+    </footer>
+    <!-- ------------------------x--------------------- FOOTER --------------------------------x----------------------------- -->
+    
+    <!-- --------------------------------------------- SCRIPTS ------------------------------------------------------------ -->
+    
+    <script>
+		var preloader = document.querySelector(".loader");
+		function LOAD(){
+			preloader.style.display = 'none';
+		};
+	</script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="assets/Bootstrap%20OLD/js/bootstrap.min.js"></script>
+    <scrip src="assets/js/jquery-3.5.1.min.js"></scrip>
+    <script src="assets/js/anime.min.js"></script>
+    <script src="assets/js/handlebars-v4.7.6.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    
+    <!-- Script for navbar hiding on scroll down -->
+    <script type="text/javascript" > 
+
+        $('body').css('padding-top', $('.navbar').outerHeight() + 'px')        
+        if ($('.smart-scroll').length > 0) { // check if element exists
+        var last_scroll_top = 0;
+        $(window).on('scroll', function() {
+        scroll_top = $(this).scrollTop();
+        if(scroll_top < last_scroll_top) {
+            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+        }
+        else {
+            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+        }
+            last_scroll_top = scroll_top;
+        });
+        }   
+    </script>
+       
+    <script type="text/x-handlebars-template" id="gallerycontent">
+       {{#each imagessource}}
+        <div class="gallery__image {{sortingclass}}">
+            <img data-src="{{imagesrc}}" loading="lazy" class="lazyload" alt="{{imagedescription}}" onclick="openModal();currentSlide(({{@index}}+1))">
+        </div>
+        {{/each}}
+    </script>
+    
+    <script type="text/x-handlebars-template" id="modalcontent">
+       {{#each imagessource}}
+        <div class="mySlides">
+            <img data-src="{{imagesrc}}" loading="lazy" class="lazyload">
+        </div>
+        {{/each}}
+    </script>
+    
+    <script>
+        $(document).ready(function(){    
+            
+            $('.small_window').hide();
+            var windowssize = $(window).width();
+            
+            if (windowssize >= 1000){
+                $('.gallery__container').ready(function(){
+                   $('.gallery_button.active').click(); 
+                });
+
+                $('.gallery_button').click(function(){
+                    var buttonattr = $(this).attr('sort');
+
+                    $('.gallery_button').removeClass('active');
+                    $(this).addClass(' active');
+
+                    $('.gallery__image').hide();
+                    $('.' + buttonattr).show();
+                })
+            }
+            
+            if (windowssize < 1000){
+                    
+                $('.buttons_gallery').hide();
+                $('.small_window').show();
+                
+                $('.gallery_button.active').clone().prependTo('.small_window');
+                                
+                $('.gallery__container').ready(function(){
+                    $('.gallery_button.active').click();
+                });
+                
+                $('.dropdown_menu').click(function(){
+                    $('.buttons_gallery').slideToggle(300);
+                })
+                
+                $('.gallery_button').click(function(){
+
+                    var buttonattr = $(this).attr('sort');
+
+                    $('.gallery_button').removeClass('active');
+                    $(this).addClass(' active');
+
+                    $('.gallery__image').hide();
+                    $('.' + buttonattr).show();
+
+                    $('.small_window .gallery_button').hide();
+
+                    $(this).clone().prependTo('.small_window');
+
+                    $('.small_window .gallery_button.active').show();
+
+                    $('.buttons_gallery').hide();
+                })
+            }
+        });
+    </script>
+    <script>
+        $(function () {
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
+    <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+      
+    </script>   
+       
+    <script type="text/javascript">
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    
+    </script>
+        
+        
+   
+</body>
+</html>

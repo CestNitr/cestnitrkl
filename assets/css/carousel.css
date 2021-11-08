@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: iron-fist;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.CEST {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.CEST .swiper-slide {
+    background-position: top;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: color;
+}
+
+.CEST .carousel__content__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+      
+}
+
+.CEST .carousel__content__container .carousel__image{
+    width: 25%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.CEST .carousel__content__container .carousel__image img{
+    width: 100%;
+}
+
+.CEST .carousel__content__container .content__container{
+    width: 100%;
+}
+
+.CEST .carousel__content__container .content__container h5{
+    color: white;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Cuprum;
+}
+
+.CEST .carousel__content__container .content__container p{
+    color: white;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Cuprum;
+}
+
+@media (max-width: 768px){
+    
+    .CEST .swiper-slide {
+        background-position:top;
+    }
+    
+    .CEST .carousel__content__container .carousel__image{
+        width: 60%;    
+    }
+    
+    .CEST .carousel__content__container .content__container p{
+        font-size: 14px;
+        font-weight: 500;
+    }        
+}
+

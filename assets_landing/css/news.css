@@ -1,0 +1,115 @@
+.news h2{
+  font-family: iron-fist;
+  /* font-family: sans-serif; */
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.news .swiper-container {
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.news .swiper-container .swiper-slide{
+  background-position: center;
+  background-size: cover;
+  width: 25rem;
+  height: 25rem;
+  cursor: pointer;
+  background: black;
+  border-radius: 1rem;
+ } 
+
+ .news .swiper-slide img{
+   width: 25rem;
+   height: 25rem;
+   border-radius: 0.5rem;
+ }
+
+.news .swiper-button-next{
+  transform: translateX(0rem);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-image: url(next.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  /* border: 2px solid black; */
+  /* box-shadow: 0 0 2rem rgba(0,0,0,0.6); */
+}
+
+.news .swiper-button-prev{
+  transform: translateX(-0rem);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-image: url(back.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  /* border: 2px solid black; */
+  /* box-shadow: 0 0 2rem rgba(0,0,0,0.5); */
+}
+
+.news .swiper-button-prev::after,
+.news .swiper-button-next::after{
+  display: none;
+}
+
+.news .swiper-slide-active{
+  box-shadow: 0 0 2rem rgba(0,0,0,0.3);
+}
+
+.news .swiper-slide:hover{
+  box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width : 1025px){
+  .news .swiper-container {
+    width: 90%;
+  }
+
+  .news .swiper-button-next{
+    display: none;
+  }
+
+  .news .swiper-button-prev{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width : 800px){
+  .news .swiper-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width : 450px){
+
+  .news .swiper-container .swiper-slide{
+    width: 20rem;
+    height: 20rem;
+   } 
+
+   .news .swiper-slide img{
+     width: 20rem;
+     height: 20rem;
+   }
+
+   .news h2{
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    margin-top: 5rem;
+  }
+}
+

@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+
+.MyContainer {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 30px 0px 150px;
+}
+
+.MyRow {
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* atyling for header */
+
+.Heading_Row {
+    margin: 0;
+    width: 100%;
+}
+
+.members_heading {
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 20px;
+    margin-left: 9%;
+    width: 91%;
+}
+
+.members_heading .heading_main h4 {
+    text-align: center;
+    color: #ff0000;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* styling for year buttons */
+#YearsNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 40px 0px 40px 15px;
+}
+.YearsButton {
+    width: fit-content;
+    line-height: 26px;
+    font-weight: 700;
+    background: inherit;
+    border: none;
+    padding: 5px 16px;
+    font-size: 18px;
+    font-family: Merriweather;
+    margin-bottom: 20px;
+}
+
+.YearsButton:active {
+    outline: none;
+}
+
+.YearsButton.active {
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #1a73e8;
+    font-weight: 900;
+    color: #1a73e8;
+}
+
+/* styling for image container buttons */
+.buttonrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.ImageNavButton {
+    line-height: 25px;
+    border: none;
+    font-weight: 300;
+    background: inherit;
+    color: black;
+    float: left;
+    width: auto;
+    margin: 0px 25px;
+    padding: 9px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.ImageNavButton::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid black;
+    transform: scale(0);
+    outline: 0;
+    transition: transform 0.2s linear;
+}
+
+.AllButton::after {
+    border-bottom: 3px solid black;
+}
+.ExecutiveClassButton::after {
+    border-bottom: 3px solid gold;
+}
+.ContentButton::after {
+    border-bottom: 3px solid #b970a7;
+}
+.WebButton::after {
+    border-bottom: 3px solid #770c0c;
+}
+.DesignButton::after {
+    border-bottom: 3px solid #1c990a;
+}
+.TechnicalButton::after {
+    border-bottom: 3px solid #870944;
+}
+
+.ImageNavButton:active {
+    outline: none;
+}
+
+.ImageNavButton.active {
+    outline: none;
+    color: black;
+}
+
+.ImageNavButton.active::after {
+    transform: scale(1);
+}
+
+.members_dropdown {
+    position: absolute;
+    font-size: 25px;
+    display: block;
+    top: 6px;
+    right: 0;
+}
+
+/* styling for image container and images itself */
+
+.FinalImageContainer {
+    margin-top: 60px;
+}
+
+.Image1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+    width: 260px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    height: 210px;
+}
+
+.Images {
+    position: relative;
+    margin-top: -20px;
+    max-width: 200px;
+    z-index: 2;
+    background: transparent;
+}
+
+.Images img {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.ImagesContent {
+    opacity: 0;
+    text-align: center;
+    transition: 0.2s ease-out;
+    color: black;
+    font-family: Roboto Slab;
+    font-weight: 600;
+    position: relative;
+    margin-top: -80px;
+    visibility: hidden;
+}
+
+.ImagesContent h5 {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.ImagesContent h6 {
+    font-size: 13px;
+}
+
+.Image1.head{
+    height: 210px;
+}
+
+.Image1.head:hover {
+    height: 250px;
+}
+
+.Image1:hover {
+    height: 220px;
+    box-shadow: 0px 4px gold;
+}
+
+.Image1:hover .ImagesContent {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.Executive:hover {
+    box-shadow: 0px 4px gold;
+    height: 250px;
+}
+
+.ContentTeam:hover {
+    box-shadow: 0px 4px #b970a7;
+}
+
+.WebTeam:hover {
+    box-shadow: 0px 4px #770c0c;
+}
+
+.DesignTeam:hover {
+    box-shadow: 0px 4px #1c990a;
+}
+
+.TechnicalTeam:hover {
+    box-shadow: 0px 4px #870944;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Image1 {
+        height: 220px;
+    }
+
+    .Image1:nth-child(1) {
+        height: 250px;
+    }
+
+    .Image1:nth-child(2) {
+        height: 250px;
+    }
+
+    .ImagesContent {
+        position: relative;
+        margin-top: 10px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .Executive {
+        box-shadow: 0px 4px 0px gold;
+        height: 250px;
+    }
+
+    .ContentTeam {
+        box-shadow: 0px 4px 0px #b970a7;
+    }
+
+    .WebTeam {
+        box-shadow: 0px 4px 0px #770c0c;
+    }
+
+    .DesignTeam {
+        box-shadow: 0px 4px 0px #1c990a;
+    }
+
+    .TechnicalTeam {
+        box-shadow: 0px 4px 0px #870944;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #YearsNav {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        padding: 5px;
+        overflow-x: scroll;
+    }
+
+    #YearsNav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .YearsButton {
+        font-size: 15px;
+        width: 120px;
+        margin-right: 5px;
+        padding: 5px 10px;
+        margin-bottom: 0;
+    }
+    .YearsButton:hover {
+        background: #f5f4f4;
+        border-radius: 5px;
+    }
+
+    .YearsButton.active {
+        outline: none;
+        background: #f5f4f4;
+    }
+
+    .ImageNavButton {
+        width: 140px;
+        font-size: 16px;
+        padding: 5px 0px;
+    }
+    .ImageNavButton:hover {
+        font-size: 16px;
+        color: black;
+    }
+    .ImageNavButton.active {
+        font-size: 16px;
+    }
+    .ImageNavButton.active {
+        color: black;
+    }
+
+    .Image1 {
+        height: 220px;
+    }
+
+    .Image1:nth-child(1) {
+        height: 250px;
+    }
+
+    .Image1:nth-child(2) {
+        height: 250px;
+    }
+
+    .ImagesContent {
+        position: relative;
+        margin-top: 10px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .Executive {
+        box-shadow: 0px 4px 0px gold;
+        height: 250px;
+    }
+
+    .ContentTeam {
+        box-shadow: 0px 4px 0px #b970a7;
+    }
+
+    .WebTeam {
+        box-shadow: 0px 4px 0px #770c0c;
+    }
+
+    .DesignTeam {
+        box-shadow: 0px 4px 0px #1c990a;
+    }
+
+    .TechnicalTeam {
+        box-shadow: 0px 4px 0px #870944;
+    }
+}

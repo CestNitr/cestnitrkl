@@ -1,0 +1,66 @@
+<div class="civipedia_container">
+</div>
+
+<div id="civimodal" class="civipedia_modal">
+    <span class="civiclose fas fa-times" onclick="closeModal()"></span>
+
+    <div class="civi_modal_content">  
+    </div>    
+
+    <a class="prev fas fa-angle-left" onclick="plusSlides(-1)"></a>
+    <a class="next fas fa-angle-right" onclick="plusSlides(1)"></a>
+</div>
+
+<script type="text/x-handlebars-template" id="civipediacontent">
+   {{#each civisource}}
+    <div class="civicards_container">
+        <img data-src="{{imagesrc}}" loading="lazy" class="lazyload" alt="{{imagedescription}}" onclick="openModal();currentSlide(({{@index}}+1))">
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/x-handlebars-template" id="civimodalcontent">
+   {{#each civisource}}
+    <div class="Civi_Slides">
+        <img data-src="{{imagesrc}}" loading="lazy" class="lazyload">
+    </div>
+    {{/each}}
+</script>
+
+
+<script>
+    $(function () {
+        const script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js';
+        document.body.appendChild(script);
+    });
+</script>
+<script>
+    function openModal() {
+      document.getElementById("civimodal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("civimodal").style.display = "none";
+    }
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("Civi_Slides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+
+</script>

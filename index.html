@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=1.0"
+    />
+    <title>CEST | Taking Pride, Getting Fascinated</title>
+
+    <!-- -------------------------------------------- BOOTSTRAP AND FONT-AWESOME --------------------------------- -->
+    <link
+      href="assets/Bootstrap%20OLD/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/font-awessome/css/all.min.css" rel="stylesheet" />
+    <!-- -------------------x------------------------ BOOTSTRAP AND FONT-AWESOME ---------------x----------------- -->
+
+    <!-- -------------------------------------------- CSS FOR NAVBAR --------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="assets/css/mynavbar.css" />
+    <link href="assets/css/carousel.css" rel="stylesheet" type="text/css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ---------------------x--------------------- CSS FOR NAVBAR ------------------------x--------------------- -->
+
+    <!-- -------------------------------------------- CSS FOR FOOTER --------------------------------------------- -->
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
+    <!-- -------------------------------------------- CSS FOR FOOTER --------------------------------------------- -->
+
+    <link rel="stylesheet" href="assets_landing/css/news.css" />
+    <link rel="stylesheet" href="assets_landing/css/initiative.css" />
+    <link rel="stylesheet" href="assets_landing/css/activity.css" />
+    <link rel="stylesheet" href="assets_landing/css/event.css" />
+    <link rel="stylesheet" href="assets_landing/css/gallery.css" />
+    <link rel="stylesheet" href="assets/css/load.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&family=Roboto+Slab:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="LOAD()">
+    <div class="loader">
+      <div class="loading">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Loading</span>
+      </div>
+    </div>
+
+    <div class="load-modal">
+      <span>x</span>
+      <div class="load-content">
+        <img src="assets/Images/events/Fest Reveal-01.png" />
+        <p>
+          Annual Civil Engineering Fest of NIT Rourkela Organised jointly by
+          CEST Club of NITRKL And ICE : UK, NITR Chapter under the technical
+          society Student Activity Centre (SAC) NIT ROURKELA
+        </p>
+        <a href="https://smarak.cestnitr.tech">Visit</a>
+      </div>
+    </div>
+    <!-- --------------------------------------------- NAVBAR ------------------------------------------------------------- -->
+    <button
+      class="fas fa-arrow-up"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+    ></button>
+
+    <nav
+      class="navbar smart-scroll navbar-expand-lg navbar-light bg-light mynavbar"
+    >
+      <div class="Navbar-Logo">
+        <a href="#"><img src="assets/Images/CEST%20White%20Logo.png" /></a>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#CollapseNAVBAR"
+        aria-controls="CollapseNAVBAR"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="fas fa-bars my_ham_icon text-black"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="CollapseNAVBAR">
+        <ul class="navbar-nav ml-auto Navbar-Links">
+          <li class="nav-item nav-item Navbar-buttons">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-item Navbar-buttons">
+            <a href="about.html">About Us</a>
+          </li>
+          <li class="nav-item Navbar-buttons">
+            <a href="initiative.html">Initiatives</a>
+          </li>
+          <li class="nav-item Navbar-buttons">
+            <a href="Events.html">Events</a>
+          </li>
+          <li class="nav-item Navbar-buttons">
+            <a href="members.html">Members</a>
+          </li>
+          <li class="nav-item Navbar-buttons">
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item Navbar-buttons">
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="swiper-container CEST">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="background-image: url(assets/Images/Image%20Scroll/h1.jpg)"
+        >
+          <div class="carousel__content__container">
+            <div class="carousel__image">
+              <img src="assets/Images/logo%20white.svg" />
+            </div>
+            <div class="content__container">
+              <h5>Civil Engineering Student Techincal Club NIT Rourkela</h5>
+              <p>Resgisterd Under Student Activity Center NIT Rourkela</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(assets/Images/Image%20Scroll/h4.jpg)"
+        >
+          <div class="carousel__content__container">
+            <div class="carousel__image">
+              <img src="assets/Images/logo%20white.svg" />
+            </div>
+            <div class="content__container">
+              <h5>Civil Engineering Student Techincal Club NIT Rourkela</h5>
+              <p>Resgisterd Under Student Activity Center NIT Rourkela</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(assets/Images/Image%20Scroll/h5.jpg)"
+        >
+          <div class="carousel__content__container">
+            <div class="carousel__image">
+              <img src="assets/Images/logo%20white.svg" />
+            </div>
+            <div class="content__container">
+              <h5>Civil Engineering Student Techincal Club NIT Rourkela</h5>
+              <p>Resgisterd Under Student Activity Center NIT Rourkela</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="news">
+      <h2>LATEST HAPPENINGS</h2>
+      <!-- Swiper -->
+      <div class="swiper-container latest">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/mondaymorningnitr/posts/4043772762320324?__cft__[0]=AZV8pVZecPnu9H3X7L7rD3OcFRelq1ixipaP7hcA6wLx7O1hV5-sivcR7ZyCnf-zU_9J13neP6GpM5lbfKIL-7_BgetMESClJZR12-SwppvYoh3KYaNh4f5SybuchSdzVLc&__tn__=%2CO%2CP-R"
+              ><img
+                src="assets_landing/photos/news/1.jpg"
+                class="swiper-lazy" />
+              <div
+                class="swiper-lazy-preloader swiper-lazy-preloader-white"
+              ></div
+            ></a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="initiative.html"
+              ><img
+                src="assets_landing/photos/news/2.jpg"
+                class="swiper-lazy" />
+              <div
+                class="swiper-lazy-preloader swiper-lazy-preloader-white"
+              ></div
+            ></a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="initiative.html"
+              ><img
+                src="assets_landing/photos/news/3.jpg"
+                class="swiper-lazy" />
+              <div
+                class="swiper-lazy-preloader swiper-lazy-preloader-white"
+              ></div
+            ></a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="initiative.html"
+              ><img
+                src="assets_landing/photos/news/4.png"
+                class="swiper-lazy" />
+              <div
+                class="swiper-lazy-preloader swiper-lazy-preloader-white"
+              ></div
+            ></a>
+          </div>
+          <div class="swiper-slide">
+            <a target="_blank" href="initiative.html"
+              ><img
+                src="assets_landing/photos/news/5.jpg"
+                class="swiper-lazy" />
+              <div
+                class="swiper-lazy-preloader swiper-lazy-preloader-white"
+              ></div
+            ></a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/cestnitr/posts/3694773040591385?__cft__[0]=AZUYMIQZShKA3XP17Vrtwm4vay8Yom-pfp2zCBTPZAbrkVabZQh9O_K_i5F7o6LJJHBaT4W6YPlhZ03sc_6FWwCZTa5M7BIaat2EExK7woOOucPK5vwKo46EzX9MPWbBsdLNs2O_b120g9AyJbMHpIuf&__tn__=%2CO%2CP-R"
+              ><img
+                src="assets_landing/photos/news/6.jpg"
+                class="swiper-lazy" />
+              <div
+                class="swiper-lazy-preloader swiper-lazy-preloader-white"
+              ></div
+            ></a>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="initiative">
+      <h1>INITIATIVE</h1>
+      <section class="init-1">
+        <div class="imagebox">
+          <img
+            class="img-responsive lazyload"
+            loading="lazy"
+            data-src="assets_landing\photos\initiative\CIVINAR.png"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h2>CIVINAR</h2>
+          <p>
+            CIVINAR is online webinar and talk session organised by CEST Club of
+            NIT Rourkela in collaboration with ICE:UK NIT Rourkela Chapter
+            hosted via YouTube Live.The motive of CIVINAR is to provide the
+            civil engineering community with diversified platform to share and
+            gain knowledge about certain trailblazing of current and future
+            interests in the Civil Engineering by noteworthy personalities who
+            have attained expertise in their respective domains.
+          </p>
+          <a href="initiative.html">Know More</a>
+        </div>
+      </section>
+      <section class="init-2">
+        <div class="content">
+          <h2>INTERVIEW</h2>
+          <p>
+            We the CEST & ICE has interviewed our proud aluminis to get to know
+            about the outer shell of civil engineering and to guide us into the
+            right path. This alumini talks provided a ocean of knowledge about
+            the challenges to be faced in civil engineering field and how to
+            encounter them.
+          </p>
+          <a href="initiative.html">Know More</a>
+        </div>
+        <div class="imagebox">
+          <img
+            class="img-responsive lazyload"
+            loading="lazy"
+            data-src="assets_landing\photos\initiative\INTERVIEW.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="init-1">
+        <div class="imagebox">
+          <img
+            class="img-responsive lazyload"
+            loading="lazy"
+            data-src="assets_landing\photos\initiative\AASRAY.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h2>AASRAY</h2>
+          <p>
+            AASRAY is an initiative by the founder to explore the various civil
+            engineering minds, it is the fruit of months of hard-work and sheer
+            dedication by the members. This is an ultimate go-to destination to
+            know about the latest trends in civil engineering. With various
+            articles ranging from Research, tributes, interviews & abstracts,
+            this is a magazine to look out for.
+          </p>
+          <a href="initiative.html">Know More</a>
+        </div>
+      </section>
+      <section class="init-2">
+        <div class="content">
+          <h2>CIVIBLOG</h2>
+          <p>
+            Our club now has taken a big step and reached a mile stone and have
+            been a guidance for many mates with a new innovation CIVIBLOG which
+            has been successfully launched in 2020. CIVIBLOG is a mini civil
+            database providing pinnacle amount of knowledge consistently
+            regarding new aspects and developments in field of civil engineering
+            and helping out the students with information collected across the
+            globe.
+          </p>
+          <a href="initiative.html">Know More</a>
+        </div>
+        <div class="imagebox">
+          <img
+            class="img-responsive lazyload"
+            loading="lazy"
+            data-src="assets_landing\photos\initiative\CIVIBLOG.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="init-1">
+        <div class="imagebox">
+          <img
+            class="img-responsive lazyload"
+            loading="lazy"
+            data-src="assets_landing\photos\initiative\CIVIPEDIA.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h2>CIVIPEDIA</h2>
+          <p>
+            Civipedia(the cure to your curiosity) is an initiative by CEST, NITR
+            that include information and knowledge related to civil engineering
+            innovations from all parts of the world. Civipedia is been
+            circulated in the website and other media like facebook, Instagram,
+            telegram and linkedin. Civipedia is both interesting and informative
+            to those who are anxious towards the civil engineering or related
+            fields.
+          </p>
+          <a href="initiative.html">Know More</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="acti">
+      <h1>ACTIVITIES</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <h3>DECEMBER<br />PROJECT</h3>
+            <div class="card">
+              <div class="imgbox">
+                <img
+                  class="img-responsive lazyload"
+                  loading="lazy"
+                  data-src="assets_landing\photos\activity\1.jpg"
+                />
+              </div>
+              <div class="btn">
+                <a target="_blank" href="https://cestclubnitrkl.blogspot.com/"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h3>IIT KHARAGPUR<br />MEGALITH</h3>
+            <div class="card">
+              <div class="imgbox">
+                <img
+                  class="img-responsive lazyload"
+                  loading="lazy"
+                  data-src="assets_landing\photos\activity\2.jpg"
+                />
+              </div>
+              <div class="btn">
+                <a target="_blank" href="https://cestclubnitrkl.blogspot.com/"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h3>IIT BOMBAY<br />TECHFEST</h3>
+            <div class="card">
+              <div class="imgbox">
+                <img
+                  class="img-responsive lazyload"
+                  loading="lazy"
+                  data-src="assets_landing\photos\activity\3.jpg"
+                />
+              </div>
+              <div class="btn">
+                <a target="_blank" href="https://cestclubnitrkl.blogspot.com/"
+                  >Know More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <h1>EVENTS</h1>
+      <div class="my_container">
+        <div class="card card-1">
+          <div class="image">
+            <img
+              class="img-responsive lazyload"
+              loading="lazy"
+              data-src="assets_landing\photos\event\inno.jpg"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <div class="heading">
+              <h4>INNOVISION</h4>
+            </div>
+            <p>
+              Innovision, NITR is the official technical fest of the institute.
+              It is one of the largest techno-management fests of eastern India
+              generally conducted in the first week of November every year.
+              Innovision welcomes everyone to participate in the fest which
+              include a variety of technical events, workshops, celebrity nights
+              etc
+            </p>
+          </div>
+          <div class="btn">
+            <div class="slide">
+              <i class="fa fa-angle-double-up up"></i>
+              <i class="fa fa-angle-double-down down"></i>
+            </div>
+            <span class="button"><a href="Events.html">Know More</a></span>
+          </div>
+        </div>
+
+        <div class="card card-2">
+          <div class="image">
+            <img
+              class="img-responsive lazyload"
+              loading="lazy"
+              data-src="assets_landing\photos\event\cest.png"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <div class="heading">
+              <h4>CLUB</h4>
+            </div>
+            <p>
+              CEST, NITR actively conducts various kinds of events during the
+              academic year those provide skills, facts, workshops, webinars
+              etc. related to civil engineering. Events those are conducted in
+              Innovision gives entertainment and technical skills, also make
+              competitions with other institutions. The club also make questions
+              in the form of quiz which is useful for exam preparation like
+              gate.
+            </p>
+          </div>
+          <div class="btn">
+            <div class="slide">
+              <i class="fa fa-angle-double-up up"></i>
+              <i class="fa fa-angle-double-down down"></i>
+            </div>
+            <span class="button"><a href="Events.html">Know More</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h1>GALLERY</h1>
+      <div class="container">
+        <div class="row my-row justify-content-center">
+          <div class="col-lg-4 my-col">
+            <div class="photo">
+              <img
+                class="img-responsive lazyload"
+                loading="lazy"
+                data-src="assets_landing\photos\gallery\1.jpg"
+              />
+            </div>
+            <div class="title">
+              <h3>GROUP<br />PHOTO</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 my-col">
+            <div class="photo">
+              <img
+                class="img-responsive lazyload"
+                loading="lazy"
+                data-src="assets_landing\photos\gallery\2.jpg"
+              />
+            </div>
+            <div class="title">
+              <h3>DECEMBER<br />PROJECT</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 my-col">
+            <div class="photo">
+              <img
+                class="img-responsive lazyload"
+                loading="lazy"
+                data-src="assets_landing\photos\gallery\3.jpg"
+              />
+            </div>
+            <div class="title"><h3>INNOVISION</h3></div>
+          </div>
+        </div>
+        <div class="row my-row justify-content-center">
+          <div class="col-lg-4 my-col">
+            <div class="photo">
+              <img
+                class="img-responsive lazyload"
+                loading="lazy"
+                data-src="assets_landing\photos\gallery\4.jpg"
+              />
+            </div>
+            <div class="title">
+              <h3>TALK<br />SESSIOIN</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 my-col">
+            <a href="gallery.html"
+              ><h3 class="heading">
+                Visit Gallery<br /><i class="fa fa-arrow-circle-right"></i></h3
+            ></a>
+          </div>
+          <div class="col-lg-4 my-col">
+            <div class="photo">
+              <img
+                class="img-responsive lazyload"
+                loading="lazy"
+                data-src="assets_landing\photos\gallery\5.jpg"
+              />
+            </div>
+            <div class="title"><h3>INSTITUTE</h3></div>
+          </div>
+        </div>
+        <div class="row my-row justify-content-center">
+          <div class="col-lg-4 my-col">
+            <div class="photo">
+              <img
+                class="img-responsive lazyload"
+                loading="lazy"
+                data-src="assets_landing\photos\gallery\6.jpg"
+              />
+            </div>
+            <div class="title">
+              <h3>Techfest<br />IIT BOMBAY</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 my-col">
+            <div class="photo">
+              <img
+                class="img-responsive lazyload"
+                loading="lazy"
+                data-src="assets_landing\photos\gallery\7.jpg"
+              />
+            </div>
+            <div class="title">
+              <h3>TECHFEST<br />IIT KGP</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 my-col">
+            <div class="photo">
+              <img
+                class="img-responsive lazyload"
+                loading="lazy"
+                data-src="assets_landing\photos\gallery\8.jpg"
+              />
+            </div>
+            <div class="title"><h3>WORKSHOP</h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------------------------- FOOTER ------------------------------------------------------------- -->
+    <footer class="continer-fluid My__Footer align-items-center">
+      <div class="Overlay__Container">
+        <section class="Overlay__Section align-items-center">
+          <i class="fa fa-map-marked-alt"></i>
+          <h4>Address</h4>
+          <p>
+            Club under Technical Society,<br />Student Activity Centre,<br />
+            National Institute of Technology Rourkela<br />Odisha, India, 769008
+          </p>
+        </section>
+
+        <section class="Overlay__Section">
+          <i class="far fa-envelope"></i>
+          <h4>E-Mail</h4>
+          <p>nitrklcest@gmail.com</p>
+        </section>
+      </div>
+
+      <div class="My__Row row justify-content-around">
+        <section
+          class="col-lg-3 col-md-5 Logo__Container justify-content-center"
+        >
+          <img src="assets/Images/Logo/NIT%20Rourkela4.png" />
+          <img src="assets/images/CEST%20White%20Logo.png" />
+          <p>
+            "Civil Engineering Students Technical Club" (CEST) is a technical
+            club of NIT Rourkela. The club aims to provide a platform fo the
+            students to think, reflect, and wonder about the phenomena involved
+            in Civil Engineering
+          </p>
+        </section>
+
+        <section class="col-lg-auto col-md-auto Content__Container">
+          <h4 class="Content__Heading">Quick Links</h4>
+          <a
+            class="quick__links"
+            target="_blank"
+            href="https://nitrkl.ac.in/CE/"
+            ><i class="fas fa-angle-right"> </i> Dept. Of Civil Eng. NITR</a
+          >
+          <a
+            class="quick__links"
+            target="_blank"
+            href="https://nitrkl.ac.in/SAC/Technical-Service/"
+            ><i class="fas fa-angle-right"> </i> SAC</a
+          >
+          <a
+            class="quick__links"
+            target="_blank"
+            href="https://nitrkl.ac.in/Home.aspx"
+            ><i class="fas fa-angle-right"> </i> NIT Rourkela</a
+          >
+          <a
+            class="quick__links"
+            target="_blank"
+            href="https://www.aicte-india.org/"
+            ><i class="fas fa-angle-right"> </i> AICTE</a
+          >
+          <a
+            class="quick__links"
+            target="_blank"
+            href="https://hrm.mhrd.gov.in/home"
+            ><i class="fas fa-angle-right"> </i> MHRD</a
+          >
+        </section>
+
+        <section class="col-lg-4 Map__Icon__Container">
+          <div class="map">
+            <h5>Find us here</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.649381494313!2d84.8990476150269!3d22.253378085347926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201f72bbd561c3%3A0xab5c70e76a7b5a!2sNational%20Institute%20of%20Technology%2C%20Rourkela!5e0!3m2!1sen!2sin!4v1610608235068!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              frameborder="0"
+              style="border: 1px solid black"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="Icons">
+            <a
+              href="https://www.instagram.com/cest.nitr/?hl=en"
+              target="_blank"
+              class="hover-fx"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/cestnitr/"
+              target="_blank"
+              class="hover-fx"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://in.linkedin.com/company/cest-club"
+              target="_blank"
+              class="hover-fx"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC38qE_5BrFT-W-yBqKAPa-A"
+              target="_blank"
+              class="hover-fx"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://t.me/cestnitr" target="_blank" class="hover-fx"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy 2021 CEST, Technical Society SAC, NITR, All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- ------------------------x--------------------- FOOTER --------------------------------x----------------------------- -->
+
+    <!-- --------------------------------------------- SCRIPTS ------------------------------------------------------------ -->
+    <script>
+      var preloader = document.querySelector(".loader");
+      function LOAD() {
+        preloader.style.display = "none";
+      }
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="assets/Bootstrap%20OLD/js/bootstrap.min.js"></script>
+    <scrip src="assets/js/jquery-3.5.1.min.js"></scrip>
+    <script src="assets/js/anime.min.js"></script>
+    <script src="assets/js/handlebars-v4.7.6.js"></script>
+
+    <!-- script for fading background -->
+    <script>
+      var swiper = new Swiper(".CEST", {
+        spaceBetween: 30,
+        effect: "fade",
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <!-- Script for navbar hiding on scroll down -->
+    <script type="text/javascript">
+      if ($(".smart-scroll").length > 0) {
+        // check if element exists
+        var last_scroll_top = 0;
+        $(window).on("scroll", function () {
+          scroll_top = $(this).scrollTop();
+          if (scroll_top < last_scroll_top) {
+            $(".smart-scroll")
+              .removeClass("scrolled-down")
+              .addClass("scrolled-up");
+          } else {
+            $(".smart-scroll")
+              .removeClass("scrolled-up")
+              .addClass("scrolled-down");
+          }
+          last_scroll_top = scroll_top;
+        });
+      }
+    </script>
+
+    <script src="assets_landing/js/event.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".latest", {
+        lazy: true,
+        effect: "coverflow",
+        grabCursor: false,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        coverflowEffect: {
+          rotate: -30,
+          stretch: -60,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".latest .swiper-pagination",
+          clickable: true,
+          type: "bullets",
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".load-modal").show(300);
+        $(".load-modal span").click(function () {
+          $(".load-modal").hide(300);
+        });
+      });
+    </script>
+
+    <script>
+      const script = document.createElement("script");
+      script.src =
+        "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";
+      document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </body>
+</html>
