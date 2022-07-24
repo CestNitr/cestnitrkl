@@ -165,6 +165,7 @@
     position: relative;
     margin-top: -20px;
     max-width: 200px;
+    max-height: 200px;
     z-index: 2;
     background: transparent;
 }
@@ -172,7 +173,7 @@
 .Images img {
     max-width: 100%;
     max-height: 100%;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5); 
 }
 .ImagesContent {
     opacity: 0;
